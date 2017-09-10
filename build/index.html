@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Home page</title>
+    <title>Validator</title>
     <meta content="" name="author">
     <meta content="" name="description">
     <meta content="" name="keywords">
@@ -15,9 +15,24 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
   </head>
   <body>
-    <div class="greating">
-      <div class="greating_text">Hello! I'm test page.</div>
-      <div class="greating_picture"></div>
+    <div class="wrapper">
+      <form class="form" action="/" id="form">
+        <input type="text" placeholder="Name 1" required>
+        <input type="text" placeholder="Name 2">
+        <input type="tel" placeholder="Phone 1" required>
+        <input type="tel" placeholder="Phone 2">
+        <input type="email" placeholder="Email" required>
+        <select required>
+          <option value="">option...</option>
+          <option value="1">option1</option>
+          <option value="2">option2</option>
+          <option value="3">option3</option>
+          <option value="4">option4</option>
+        </select>
+        <textarea name="" placeholder="Message"></textarea>
+        <input type="submit" value="Submit">
+        <div class="result" id="result"></div>
+      </form>
     </div>
   </body>
 </html>

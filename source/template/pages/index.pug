@@ -1,7 +1,32 @@
 extends ../_template
 
 block variables
-  - var title = 'Home page'
+	- var title = 'Validator'
 
 block content
-  include ../common/_greating
+
+	.wrapper
+
+		form(action="/").form#form
+
+			input(type="text", placeholder="Name 1", required)
+			input(type="text", placeholder="Name 2")
+
+			input(type="tel", placeholder="Phone 1", required)
+			input(type="tel", placeholder="Phone 2")
+
+			input(type="email", placeholder="Email", required)
+			//-input(type="email", placeholder="Email 2")
+
+			select(required)
+				option(value="") option...
+				option(value="1") option1
+				option(value="2") option2
+				option(value="3") option3
+				option(value="4") option4
+
+			textarea(name="" placeholder="Message")
+
+			input(type="submit", value="Submit")
+
+			.result#result

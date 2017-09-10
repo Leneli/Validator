@@ -11,4 +11,9 @@
 // Import all files from a folder
 // the sequence is not important
 @import "common/**/*.scss";
-@import "blocks/**/*.scss";
+
+.wrapper {
+	width: 500px;
+	margin: 50px auto;
+	@extend %gothic;
+}

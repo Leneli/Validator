@@ -31,12 +31,7 @@ $.gulp.task("default", $.gulp.series(
 		"pug",
 		"js:foundation",
 		"js:process",
-		"copy:image",
-		"copy:fonts",
-		"copy:video",
-		"css:foundation",
-		"sprite:svg",
-		"sprite:png"
+		"css:foundation"
 	),
 	$.gulp.parallel(
 		"watch",
